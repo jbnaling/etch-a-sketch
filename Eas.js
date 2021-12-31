@@ -27,7 +27,7 @@ function createGrid(gridRowNum, gridColumnNum){
     gridContainer.id = "gridContainer";
     gridContainer.style.height = "50vh"
     gridContainer.style.display = "grid";
-    gridContainer.style.gridGap = "10px";
+    
     gridContainer.style.gridTemplateRows= "auto"
     gridContainer.style.gridTemplateColumns = `repeat(${gridColumnNum}, 1fr)`;
     //document.body.append(gridContainer);
@@ -45,7 +45,7 @@ function fillGrid(gridArea){
         //clear color
         item[i] = document.createElement("div");
         item[i].style.backgroundColor = `rgb(255, 255, 255)`;
-        item[i].style.border = "1px solid #ddd";
+        //item[i].style.border = "1px solid #ddd";
 
 
 
@@ -96,9 +96,10 @@ function fillGrid(gridArea){
 
 
 
-//event resetting grid
+//event - clear grid color and make buttons visible 
 
 btnClear.addEventListener("click", (e) => {
+    
     gridRowNum = prompt("Enter number of rows(100 max):", "");
     while (gridRowNum > 100 || gridRowNum < 1){
         gridRowNum = prompt("Enter number of rows(100 max):", "");
