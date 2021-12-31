@@ -1,0 +1,44 @@
+/*stick footer */
+.HolyGrail {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    flex: 1;
+    border-style: solid;
+
+}
+  
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: end;
+    border-style: solid;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    justify-content: center;
+    padding: 5em;
+    gap: 10em;
+}
+
+.HolyGrail-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-style: solid;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    border-style: solid;
+    
+
+}
